@@ -1,3 +1,4 @@
+import os
 import requests
 import pandas as pd
 import time
@@ -6,7 +7,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
-import os
+
 
 def chrome_driver():
     driver_path = ChromeDriverManager().install()
